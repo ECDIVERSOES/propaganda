@@ -17,6 +17,8 @@
             background-position: center;
             color: white;
             font-family: 'Roboto', Arial, sans-serif;
+            overflow: hidden; /* Bloqueia a rolagem */
+            overscroll-behavior-y: contain; /* Bloqueia o pull-to-refresh */
         }
 
         .header {
@@ -83,8 +85,8 @@
     <div class="header">
         <img src="icone.png" alt="Logo EC Diversões"> <!-- Substitua pelo seu ícone -->
         <div>
-            <h1>EC DIVERS&Otilde;ES</h1>
-            <h2>Loca&ccedil;&otilde;es de brinquedos e karaok&ecirc; para festas</h2>
+            <h1>EC DIVERSÕES</h1>
+            <h2>Locações de brinquedos e karaokê para festas</h2>
         </div>
     </div>
 
@@ -99,5 +101,13 @@
     <div class="footer">
         <p>&copy; 2025 esiocosta16@gmail.com</p>
     </div>
+
+    <script>
+        // Bloqueia a rolagem com JavaScript (adicione se necessário)
+        document.body.style.overflow = 'hidden';
+        window.addEventListener('scroll', function() {
+            window.scrollTo(0, 0);
+        });
+    </script>
 </body>
 </html>
